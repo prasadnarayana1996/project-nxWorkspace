@@ -1,0 +1,36 @@
+{
+  "npmScope": "ctg",
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "cmd-frontend": {
+      "tags": []
+    },
+    "cmd-frontend-e2e": {
+      "tags": [],
+      "implicitDependencies": ["cmd-frontend"]
+    },
+    "mso-frontend": {
+      "tags": []
+    },
+    "mso-frontend-e2e": {
+      "tags": [],
+      "implicitDependencies": ["mso-frontend"]
+    },
+    "catalyst-frontend": {
+      "tags": []
+    },
+    "catalyst-frontend-e2e": {
+      "tags": [],
+      "implicitDependencies": ["catalyst-frontend"]
+    }
+  }
+}

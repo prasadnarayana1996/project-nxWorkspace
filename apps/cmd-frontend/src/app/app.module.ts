@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { MainLayoutComponent } from './shared/layout/main-layout/main-layout.component';
 import { SideNavComponent } from './shared/layout/side-nav/side-nav.component';
 import { HeaderComponent } from './shared/layout/header/header.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,7 +17,8 @@ import { HeaderComponent } from './shared/layout/header/header.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [AuthGuard],
   bootstrap: [AppComponent]

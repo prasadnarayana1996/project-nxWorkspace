@@ -1,0 +1,11 @@
+@import "../../../../assets/sass/variables";
+@import "../../../../assets/sass/mixins";
+
+.sigin_card {
+  width: 50vw;
+  padding-top: 5rem;
+}
+
+.btn-custom {
+  @include button-bg(#2ecc71);
+}
